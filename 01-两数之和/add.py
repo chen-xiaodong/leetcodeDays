@@ -5,8 +5,3 @@ def two_sum(nums, target):
         if target - n in dct:
             return [dct[target - n], i]
         dct[n] = i
-
-if __name__ == '__main__':
-    num = [3, 3]
-    target = 6
-    twoSum(num, target)
