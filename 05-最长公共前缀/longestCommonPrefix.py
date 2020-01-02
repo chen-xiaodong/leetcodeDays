@@ -1,5 +1,13 @@
 class Solution:
     def longestCommonPrefix(self, strs: List[str]):
+        """
+        整体解决方案：通过取出字符串列表中最短字符串，然后拆解该字符串去其他字符串中进行比对
+        一旦不在其他字符串中，立刻返回空值
+
+        :param strs:
+        :return:
+
+        """
         if not strs: return ""
         length_list = []
         res = ''
